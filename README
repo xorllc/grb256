@@ -1,6 +1,6 @@
-This is a version of Infinite Red's vim theme (http://blog.infinitered.com/entries/show/8) packaged to work with Tim Pope's pathogen plugin (http://www.vim.org/scripts/script.php?script_id=2332).
+This is a repackaged version of Gary Bernhardt's [grb256 vim theme](https://github.com/garybernhardt/dotfiles/blob/master/.vim/colors/grb256.vim), which in turn is based on [ir_black](http://toddwerth.com/2008/04/30/the-last-vim-color-scheme-youll-ever-need/).
 
-To use it (assuming you're using pathogen):
+# How to install (with Pathogen)
 
 - go to your bundle directory (.vim/bundle or .vimbundles) and clone the repo:
 
@@ -8,4 +8,11 @@ To use it (assuming you're using pathogen):
 
 - edit your .vimrc and add:
 
-  :colorscheme ir_black
+  colorscheme grb256
+  
+# How install (with Vundle)
+
+- edit your .vimrc and add:
+   
+  Bundle 'quanganhdo/grb256'
+  colorscheme grb256
