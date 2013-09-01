@@ -10,7 +10,7 @@ This is a repackaged version of Gary Bernhardt's [grb256 vim theme](https://gith
 
   ```colorscheme grb256```
   
-# How install (with Vundle)
+# How to install (with Vundle)
 
 - edit your .vimrc and add:
    
