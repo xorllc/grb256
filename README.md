@@ -18,3 +18,12 @@ This is a repackaged version of Gary Bernhardt's [grb256 vim theme](https://gith
   Bundle 'quanganhdo/grb256'
   colorscheme grb256
   ```
+
+# How to install (with NeoBundle)
+
+- edit your .vimrc and add:
+   
+  ```
+  NeoBundle 'quanganhdo/grb256'
+  colorscheme grb256
+  ```
