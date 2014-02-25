@@ -4,7 +4,7 @@ This is a repackaged version of Gary Bernhardt's [grb256 vim theme](https://gith
 
 - go to your bundle directory (.vim/bundle or .vimbundles) and clone the repo:
 
-  ```git clone git@github.com:wgibbs/vim-irblack.git```
+  ```git clone https://github.com/quanganhdo/grb256.git```
 
 - edit your .vimrc and add:
 
