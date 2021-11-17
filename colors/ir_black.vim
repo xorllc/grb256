@@ -6,15 +6,15 @@
 " Standard colors used in all ir_black themes:
 " Note, x:x:x are RGB values
 "
-"  normal: #E0DDD3
+"  normal: #A8A8A8
 "
-"  string: #92FF38  168:255:96
+"  string: #7EC44D  168:255:96
 "    string inner (punc, code, etc): #00A0A0  0:160:160
-"  number: #FF73FD  255:115:253
-"  comments: #7C7C7C  124:124:124
+"  number: #7EC44D  255:115:253
+"  comments: #5C5C5C  124:124:124
 "  keywords: #96CBFE  150:203:254
 "  operators: white
-"  class: #FFFF75  255:255:182
+"  class: #7EC44D  255:255:182
 "  method declaration name: #FFD2A7  255:210:167
 "  regular expression: #E9C062  233:192:98
 "    regexp alternate: #FF8000  255:128:0
@@ -42,12 +42,12 @@
 " ********************************************************************************
 " The following are the preferred 16 colors for your terminal
 "           Colors      Bright Colors
-" Black     #4E4E4E     #7C7C7C
+" Black     #4E4E4E     #5C5C5C
 " Red       #FF493B     #FF7063
-" Green     #92FF38     #CEFFAB
-" Yellow    #FFFF75     #FFFFCB
+" Green     #7EC44D     #7EC44D
+" Yellow    #7EC44D     #FFFFCB
 " Blue      #96CBFE     #FFFFCB
-" Magenta   #FF73FD     #FF9CFE
+" Magenta   #7EC44D     #7EC44D
 " Cyan      #C6C5FE     #DFDFFE
 " White     #EEEEEE     #FFFFFF
 
@@ -66,7 +66,7 @@ let colors_name = "ir_black"
 "hi Example         guifg=NONE        guibg=NONE        gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 
 " General colors
-hi Normal           guifg=#E0DDD3     guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Normal           guifg=#A8A8A8     guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi NonText          guifg=#070707     guibg=black       gui=NONE      ctermfg=black       ctermbg=NONE        cterm=NONE
 
 hi Cursor           guifg=black       guibg=white       gui=NONE      ctermfg=black       ctermbg=white       cterm=reverse
@@ -77,7 +77,7 @@ hi StatusLine       guifg=#CCCCCC     guibg=#202020     gui=italic    ctermfg=wh
 hi StatusLineNC     guifg=black       guibg=#202020     gui=NONE      ctermfg=blue        ctermbg=darkgray    cterm=NONE
 
 hi Folded           guifg=#a0a8b0     guibg=#384048     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
-hi Title            guifg=#E0DDD3     guibg=NONE        gui=bold      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+hi Title            guifg=#A8A8A8     guibg=NONE        gui=bold      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Visual           guifg=NONE        guibg=#262D51     gui=NONE      ctermfg=NONE        ctermbg=darkgray    cterm=NONE
 
 hi SpecialKey       guifg=#808080     guibg=#343434     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
@@ -96,16 +96,16 @@ hi ModeMsg          guifg=black       guibg=#C6C5FE     gui=BOLD      ctermfg=bl
 if version >= 700 " Vim 7.x specific colors
   hi CursorLine     guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=BOLD
   hi CursorColumn   guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=BOLD
-  hi MatchParen     guifg=#E0DDD3     guibg=#857b6f     gui=BOLD      ctermfg=white       ctermbg=darkgray    cterm=NONE
-  hi Pmenu          guifg=#E0DDD3     guibg=#444444     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+  hi MatchParen     guifg=#A8A8A8     guibg=#857b6f     gui=BOLD      ctermfg=white       ctermbg=darkgray    cterm=NONE
+  hi Pmenu          guifg=#A8A8A8     guibg=#444444     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi PmenuSel       guifg=#000000     guibg=#cae682     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi Search         guifg=NONE        guibg=NONE        gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
 endif
 
 " Syntax highlighting
-hi Comment          guifg=#7C7C7C     guibg=NONE        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
-hi String           guifg=#92FF38     guibg=NONE        gui=NONE      ctermfg=green       ctermbg=NONE        cterm=NONE
-hi Number           guifg=#FF73FD     guibg=NONE        gui=NONE      ctermfg=magenta     ctermbg=NONE        cterm=NONE
+hi Comment          guifg=#5C5C5C     guibg=NONE        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi String           guifg=#7EC44D     guibg=NONE        gui=NONE      ctermfg=green       ctermbg=NONE        cterm=NONE
+hi Number           guifg=#7EC44D     guibg=NONE        gui=NONE      ctermfg=magenta     ctermbg=NONE        cterm=NONE
 
 hi Keyword          guifg=#96CBFE     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
 hi PreProc          guifg=#96CBFE     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
@@ -116,7 +116,7 @@ hi Constant         guifg=#99CC99     guibg=NONE        gui=NONE      ctermfg=cy
 
 hi Identifier       guifg=#C6C5FE     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 hi Function         guifg=#FFD2A7     guibg=NONE        gui=NONE      ctermfg=brown       ctermbg=NONE        cterm=NONE
-hi Type             guifg=#FFFF75     guibg=NONE        gui=NONE      ctermfg=yellow      ctermbg=NONE        cterm=NONE
+hi Type             guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=yellow      ctermbg=NONE        cterm=NONE
 hi Statement        guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=lightblue   ctermbg=NONE        cterm=NONE
 
 hi Special          guifg=#E18964     guibg=NONE        gui=NONE      ctermfg=white       ctermbg=NONE        cterm=NONE

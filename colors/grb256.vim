@@ -10,9 +10,9 @@ hi Comment ctermfg=lightgrey
 hi StatusLine ctermbg=darkgrey ctermfg=white
 hi StatusLineNC ctermbg=black ctermfg=lightgrey
 hi VertSplit ctermbg=black ctermfg=lightgrey
-hi LineNr ctermfg=darkgray
+hi LineNr term=NONE cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 hi CursorLine       guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE       ctermbg=234    cterm=NONE
-hi CursorLineNr     term=bold         cterm=bold
+hi CursorLineNr term=bold gui=NONE guifg=#7EC44D guibg=NONE
 hi Function         guifg=#FFD2A7     guibg=NONE        gui=NONE      ctermfg=yellow     ctermbg=NONE   cterm=NONE
 hi Visual           guifg=NONE        guibg=#383636     gui=NONE      ctermfg=NONE       ctermbg=236    cterm=NONE
 
