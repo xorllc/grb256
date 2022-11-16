@@ -1,6 +1,8 @@
 " ir_black color scheme
 " More at: http://blog.infinitered.com/entries/show/8
 
+"To change the st cursor color you need to edit the config.h file, in there you can find 'defaultcs' and 'defaultrcs' which define the normal and reverse cursor color. I've not tried the .vimrc escape sequence trick.
+
 
 " ********************************************************************************
 " Standard colors used in all ir_black themes:
@@ -12,26 +14,26 @@
 "    string inner (punc, code, etc): #00A0A0  0:160:160
 "  number: #7EC44D  255:115:253
 "  comments: #5C5C5C  124:124:124
-"  keywords: #96CBFE  150:203:254
+"  keywords: #759fc7  150:203:254
 "  operators: white
 "  class: #7EC44D  255:255:182
-"  method declaration name: #FFD2A7  255:210:167
-"  regular expression: #E9C062  233:192:98
+"  method declaration name: #FF493B  255:210:167
+"  regular expression: #FF493B  233:192:98
 "    regexp alternate: #FF8000  255:128:0
 "    regexp alternate 2: #B18A3D  177:138:61
-"  variable: #C6C5FE  198:197:254
+"  variable: #759fc7  198:197:254
 "
 " Misc colors:
 "  red color (used for whatever): #FF493B   255:108:96
 "     light red: #FF7063   255:182:176
 "
-"  brown: #E18964  good for special
+"  brown: #DDDDDD  good for special
 "
 "  lightpurpleish: #FFCCFF
 "
 " Interface colors:
 "  background color: black
-"  cursor (where underscore is used): #FFA560  255:165:96
+"  cursor (where underscore is used): #FF493B  255:165:96
 "  cursor (where block is used): white
 "  visual selection: #1D1E2C
 "  current line: #151515  21:21:21
@@ -46,9 +48,9 @@
 " Red       #FF493B     #FF7063
 " Green     #7EC44D     #7EC44D
 " Yellow    #7EC44D     #FFFFCB
-" Blue      #96CBFE     #FFFFCB
+" Blue      #759fc7     #FFFFCB
 " Magenta   #7EC44D     #7EC44D
-" Cyan      #C6C5FE     #DFDFFE
+" Cyan      #759fc7     #DFDFFE
 " White     #EEEEEE     #FFFFFF
 
 
@@ -91,14 +93,14 @@ hi ErrorMsg         guifg=white       guibg=#FF493B     gui=BOLD      ctermfg=wh
 hi WarningMsg       guifg=white       guibg=#FF493B     gui=BOLD      ctermfg=white       ctermbg=red         cterm=NONE
 
 " Message displayed in lower left, such as --INSERT--
-hi ModeMsg          guifg=black       guibg=#C6C5FE     gui=BOLD      ctermfg=black       ctermbg=cyan        cterm=BOLD
+hi ModeMsg          guifg=black       guibg=#759fc7     gui=BOLD      ctermfg=black       ctermbg=cyan        cterm=BOLD
 
 if version >= 700 " Vim 7.x specific colors
   hi CursorLine     guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=BOLD
   hi CursorColumn   guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=BOLD
-  hi MatchParen     guifg=#A8A8A8     guibg=#857b6f     gui=BOLD      ctermfg=white       ctermbg=darkgray    cterm=NONE
+  hi MatchParen     guifg=#FFFFFF     guibg=#000000     gui=BOLD      ctermfg=white       ctermbg=darkgray    cterm=NONE
   hi Pmenu          guifg=#A8A8A8     guibg=#444444     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
-  hi PmenuSel       guifg=#000000     guibg=#cae682     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
+  hi PmenuSel       guifg=#000000     guibg=#7EC44D     gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
   hi Search         guifg=NONE        guibg=NONE        gui=underline ctermfg=NONE        ctermbg=NONE        cterm=underline
 endif
 
@@ -107,19 +109,19 @@ hi Comment          guifg=#5C5C5C     guibg=NONE        gui=NONE      ctermfg=da
 hi String           guifg=#7EC44D     guibg=NONE        gui=NONE      ctermfg=green       ctermbg=NONE        cterm=NONE
 hi Number           guifg=#7EC44D     guibg=NONE        gui=NONE      ctermfg=magenta     ctermbg=NONE        cterm=NONE
 
-hi Keyword          guifg=#96CBFE     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
-hi PreProc          guifg=#96CBFE     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
+hi Keyword          guifg=#759fc7     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
+hi PreProc          guifg=#759fc7     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE
 hi Conditional      guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=blue        ctermbg=NONE        cterm=NONE  " if else end
 
 hi Todo             guifg=#8f8f8f     guibg=NONE        gui=NONE      ctermfg=red         ctermbg=NONE        cterm=NONE
 hi Constant         guifg=#99CC99     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 
-hi Identifier       guifg=#C6C5FE     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
-hi Function         guifg=#FFD2A7     guibg=NONE        gui=NONE      ctermfg=brown       ctermbg=NONE        cterm=NONE
+hi Identifier       guifg=#759fc7     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
+hi Function         guifg=#FF493B     guibg=NONE        gui=NONE      ctermfg=brown       ctermbg=NONE        cterm=NONE
 hi Type             guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=yellow      ctermbg=NONE        cterm=NONE
 hi Statement        guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=lightblue   ctermbg=NONE        cterm=NONE
 
-hi Special          guifg=#E18964     guibg=NONE        gui=NONE      ctermfg=white       ctermbg=NONE        cterm=NONE
+hi Special          guifg=#DDDDDD     guibg=NONE        gui=NONE      ctermfg=white       ctermbg=NONE        cterm=NONE
 hi Delimiter        guifg=#00A0A0     guibg=NONE        gui=NONE      ctermfg=cyan        ctermbg=NONE        cterm=NONE
 hi Operator         guifg=white       guibg=NONE        gui=NONE      ctermfg=white       ctermbg=NONE        cterm=NONE
 
